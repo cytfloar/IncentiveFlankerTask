@@ -1,0 +1,3 @@
+import IFT_MRI_2022
+
+IFT_MRI_2022.run()
