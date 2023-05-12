@@ -51,9 +51,9 @@ def run():
     newInstruct(win, c.INST1_MRI, "space")
     newInstruct(win, c.INST2_MRI, "space")
     newInstruct(win, c.INST3, "space")
-    showInstructCue(win, c.INST4, "stimuli/TUP.BMP", "25¢")
+    showInstructCue(win, c.INST4, "stimuli/TUP.BMP", "25¢", "space")
     newInstruct(win, c.INST5, "space")
-    showInstructCue(win, c.INST6, "stimuli/NEUTRAL.BMP", "0¢")
+    showInstructCue(win, c.INST6, "stimuli/NEUTRAL.BMP", "0¢", "space")
 
     balance = 10.0
     number = int(expInfo['startorder'][-1])
