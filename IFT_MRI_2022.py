@@ -48,11 +48,11 @@ def run():
     # df = pd.read_excel(lists)
 
     showWelc(win)
-    newInstruct(win, c.INST1_MRI)
-    newInstruct(win, c.INST2_MRI)
-    newInstruct(win, c.INST3)
+    newInstruct(win, c.INST1_MRI, "space")
+    newInstruct(win, c.INST2_MRI, "space")
+    newInstruct(win, c.INST3, "space")
     showInstructCue(win, c.INST4, "stimuli/TUP.BMP", "25¢")
-    newInstruct(win, c.INST5)
+    newInstruct(win, c.INST5, "space")
     showInstructCue(win, c.INST6, "stimuli/NEUTRAL.BMP", "0¢")
 
     balance = 10.0
