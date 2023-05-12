@@ -104,7 +104,7 @@ def newCue(win, img_path, wait_time, letter, dollar, keyList=['2','7'], zoom=2):
     upinctxt.draw()
     dwinctxt.draw()
     win.flip()
-def showInstructCue(win, text, img_path, dollar):
+def showInstructCue(win, text, img_path, dollar, keyList=None):
     inst = newTxt(win, text)
     img = newImage(win, image=img_path, zoom=1.0, pos=(0, -0.4))
     inctxt = newTxt(win, text=dollar, height=0.05, pos=(0, -0.2))
@@ -112,7 +112,7 @@ def showInstructCue(win, text, img_path, dollar):
     img.draw()
     inctxt.draw()
     win.flip()
-    newKey()
+    newKey(keyList=None)
 def showCue(win, img_path, wait_time, letter, dollar, keyList=['2','7'], zoom=2):
     start_time = core.getTime()
     newCue(win, img_path, wait_time, letter, dollar, keyList=['2','7'], zoom=2)
